@@ -1,0 +1,190 @@
+<Html>
+<head>
+  <a href="aboutMe.html">back to home page</a><br>
+</Head>
+	<style>
+	<body>
+           {
+           	background-color:#3190B3;
+           }  
+
+
+           h1{
+           	text-align:center;
+           	color:black;
+           	background-color:orange;
+           	font-family:fantasy;
+           }
+
+            h2{	text-align:center;
+           	color:black;
+           	background-color:orange;
+           	font-family:fantasy;
+           	padding:10px;
+           	border-radius:4px;
+           	box-shadow:2px 2px 17px 17px yellow;
+           	border-style:outset;
+           	 }
+           	 .Income
+           	 {
+           	 	float:left;
+           	 	background-color:yellow;
+           	 	color:green;
+           	 	font-size:30px;
+           	 	font-family:cursive;
+           	 	padding:10xp;
+           	 	border-radius:10px;
+           	 	border:13px black;
+           	 	align:center
+           	 	margin-right:10cm;
+           	 	margin-left:10cm;
+           	 	border-style:outset;
+           	 }
+           	 .Exp
+             {float:left;
+           	 	background-color:yellow;
+           	 	color:green;
+           	 	font-size:30px;
+           	 	font-family:cursive;
+           	 	padding:7xp;
+           	 	border-radius:10px;
+           	 	border:13px black;
+           	 	align:center
+           	 	margin-right:2cm;
+           	 	margin-left:1.2cm;
+           	 	border-style:outset;
+           	 }
+             .Sibutton
+             {float:left;
+           	 	background-color:grey;
+           	 	color:yellow;
+           	 	font-size:23px;
+           	 	font-family:cursive;
+           	 	padding:7xp;
+           	 	border-radius:10px;
+           	 	border:13px black;
+           	 	align:center
+           	 	margin-right:15.5cm;
+           	 	margin-left:15.5cm;
+           	 	border-style:outset;
+           	 .EXPbutton
+             {float:left;
+           	 	background-color:grey;
+           	 	color:yellow;
+           	 	font-size:23px;
+           	 	font-family:cursive;
+           	 	padding:7px;
+           	 	border-radius:10px;
+           	 	border:13px black;
+           	 	align:center
+           	 	margin-right:10-px;
+           	 	margin-left:10px;
+           	 	border-style:outset;
+           	 }
+
+            </style>
+        </head>
+
+
+
+             <h1>The Investment Calculator</h1>
+
+               <h2>Income</h2>
+     
+                  <button style="button" onclick="func1()" class="SIbutton">Show Income</button><center> <br> <br> <br> <br>
+
+                  <div class="Income" id="sala">Salary</div>
+
+                  <div class="Income" id="invest">Investment</div> <br> <br> <br> <br>
+
+                  <h2>Expenses</h2>
+
+                <button style="button" onclick="func2()" class="SIbutton">Show Expenses</button><center> <br> <br> <br> <br>
+
+                  <div class="Exp" id="groc">Groceries</div>
+
+                  <div class="Exp" id="bill">Bills</div>
+
+                  <div class="Exp" id="tax">Taxes</div>
+
+                  <div class="Exp" id="EMI">EMI</div>
+
+                  <div class="Exp" id="edu">Education</div>
+
+                  <div class="Exp" id="medi">Medical</div> </div> <br> <br> <br> <br>
+
+                   <h2 id="prev">Previous Bank balance</h2>
+
+
+
+                 <h2 id="net">This Month Net Amount:Income Expenses </h2>
+
+                 <h2 id="Current">Current Bank balance</h2>
+
+                 <button style="button" onclick="func3()" class="SIbutton"> Check Balance</button><center>
+
+
+
+
+
+
+
+
+</body>
+<script>
+
+
+var salary1=30
+var invest1=5
+var groc1=10
+var bill1=40
+var EMI1=1
+var edu1=2
+var medi1=34
+var netAm=salary1-(groc1+bill1+EMI1+medi1+edu1)
+var priv=401
+var curr=medi1+EMI1
+
+
+function func1()
+{
+document.getElementById('sala').innerHTML="salary:" +salary1;
+document.getElementById('invest').innerHTML="investment:" +invest1;
+}
+
+function func2()
+{
+document.getElementById('groc').innerHTML="Groceries:" +groc1;
+document.getElementById('bill').innerHTML="Bills:" +bill1;
+document.getElementById('tax').innerHTML="Taxes:" +EMI1;
+document.getElementById('EMI').innerHTML="EMI:" +EMI1;
+document.getElementById('edu').innerHTML="Education:" +medi1;
+document.getElementById('medi').innerHTML="Medical:" +medi1;
+}
+
+
+
+
+function func3()
+{
+document.getElementById('prev').innerHTML="Previous Bank Balance:" +priv;
+document.getElementById('net').innerHTML="Net:" +netAm;
+document.getElementById('current').innerHTML="Current Bank Balance:" +curr;
+}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
