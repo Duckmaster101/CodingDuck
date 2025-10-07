@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><a href="aboutMe.html">back  to  home  page</a></title>
+	<style>
+		
+		body
+		{
+			background-image: url("image1.png");
+			background-size: cover;
+		}
+		.three
+		{
+			margin-left:80px;
+		}
+		.three:hover
+		{
+			animation: blinker 0.1s linear infinite;
+		}
+		@keyframes blinker
+		{
+			50%{opacity:0;}
+		}
+
+		ul
+		{
+			list-style-type: none;
+			overflow:hidden;
+			margin:0;
+			padding:0;
+		}
+		li
+		{
+			float:right;
+		}
+		li a
+		{
+			display:block;
+			color:black;
+			font-family: verdana;
+			text-align: center;
+			text-decoration: none;
+			padding: 12px 28px;
+		}
+		li a:hover
+		{
+           color: white;	}
+		.one
+		{
+			color:white;
+			font-family: verdana;
+			text-align:center;
+			margin-top:2cm;
+			margin-bottom:0cm;
+			margin-right:60cm;
+			margin-left:2cm;
+			font-size: 80px;
+		}
+		
+		.two
+		{
+			margin-right: 50px;
+			margin-left:20px;
+			margin-bottom: 1cm;
+			margin-top: -15%;
+			float:right;
+			display:flex;
+			align-items: center;
+		}
+		p
+		{
+			font-size:20px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+<ul>
+<img src="logo-2.png" width="100" height="100" class="three">
+	<li><a href="connect.html">CONNECT</a></li>
+	<li><a href="">PRODUCTS</a></li>
+	<li><a href="">SPECIFICATIONS</a></li>
+	<li><a href="about.html">ABOUT</a></li>
+	<li><a href="music.html">HOME</a></li>
+</ul>
+<b><div class="one">THE<br> REAL<br> SOUND</div></b>
+<div class="two"><p>Click here to listen</p><img src="play.png"  id="icon" width="100" height="100"></div> 
+<audio id="MySong">
+	<source src="abc.mp3" type="audio/mp3">
+	</audio>
+</body>
+<script>
+	var MySong1=document.getElementById("MySong")
+	var icon1=document.getElementById("icon")
+	icon.onclick=function()
+	{
+		if(MySong.paused)
+			{
+		    MySong.play();
+		    icon.src="pause.png"
+		    }
+		else
+		    {
+			MySong.pause();
+			icon.src="play.png"
+		    }    
+	}
+</script>
+</html>
